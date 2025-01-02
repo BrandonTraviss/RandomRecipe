@@ -19,6 +19,19 @@ function clearDom() {
     ingredientsDiv.innerHTML = ""
     measurementsDiv.innerHTML = ""
 }
+
+function addLinesToString(text) {
+    // Add a newline every .
+    const modifiedText = text.replace(/\./g, '.\n');
+    return modifiedText;
+}
+
+// Example usage
+const sampleText = "This is a sentence. Here is another one. And another.";
+const result = addLinesToString(sampleText);
+console.log(result);
+
+
 export default async function renderMeal() {
     //Clear Dom
     clearDom()
@@ -60,7 +73,9 @@ export default async function renderMeal() {
     })
     //Setup instructions
     const instructionsText = document.createElement('p')
-    instructionsText.innerHTML = meal.instructions
+    let instructionsLines = addLinesToString(meal.instructions)
+    console.log(instructionsLines)
+    instructionsText.innerText = instructionsLines
     instructionsText.classList.add('instructions-text')
     //Append Ingredients and Measurements to container
     ingredientsMeasurementsContainer.appendChild(ingredientsDiv)
