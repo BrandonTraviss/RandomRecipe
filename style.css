@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.meal-main-div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding-top: 2.5vh;
+}
+
+.main-container {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    border-radius: 15px;
+    max-width: 90vw;
+    border: 1px solid rgba(0, 0, 0, 0.486)
+}
+
+.meal-name {
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+.ingredient-measurement-container {
+    color: black;
+    margin-block: 1rem;
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+    width: 90vw;
+    background-color: rgb(204, 204, 204);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+button {
+    border-radius: 5px;
+    font-size: large;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.instructions-text {
+    color: black;
+    max-width: 700px;
+    width: 90vw;
+    background-color: rgb(216, 215, 215);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.link-container {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    max-width: 90vw;
+}
+
+.youtube-link {
+    font-size: large;
+    color: rgb(255, 70, 70);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.source-link {
+    font-size: large;
+    color: rgb(70, 135, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
